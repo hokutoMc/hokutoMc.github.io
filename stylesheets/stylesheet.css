@@ -142,10 +142,16 @@ a.button small {
   display: block;
   font-size: 11px;
 }
-header a.button {
+header a.buttonGh {
   position: absolute;
   right: 0;
   top: 0;
+  background: transparent url(../images/github-button.png) 0 0 no-repeat;
+}
+header a.buttonTw {
+  position: absolute;
+  right: 0;
+  top: 58;
   background: transparent url(../images/github-button.png) 0 0 no-repeat;
 }
 aside a.button {
