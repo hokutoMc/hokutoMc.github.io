@@ -1,6 +1,7 @@
 var xmlHttpRequest = new XMLHttpRequest();
 var data;
 var classifiers = ["", "-dev"];
+var mods = ["commons"]
 
 xmlHttpRequest.onreadystatechange = function()
 {
@@ -29,23 +30,26 @@ function version(){
   if (index != 0){
     vs = obj.options[index].value;
     
-    for(var i = 0; i < 3; i++){
-      var strModName = data[i]["name"];
-      vat strModArc = data[i]["archive"]
-      var strModLoc = data[i]["location"];
+    for(var i = 0; i < mods.length; i++){
+      
+      var strModName = data[mods[i]]["name"];
+      vat strModArc = data[mods[i]]["archive"]
+      var strModLoc = data[mods[i]]["location"];
       document.writeLine(strModName);
       
-      for(var j = 0; j < data[i].length; j++){
+      var verlist = data[mods[i]]["versions"]
+      
+      for(var j = 0; j < verList.length; j++){
         
-        if(vs == data[i][j]["mcversion"]){
-          var strVersion = data[i][j]["version"];
+        if(vs == verList[j]["mcversion"]){
+          var strVersion = verList[j]["version"];
           var shown = strVersion;
           
           var shownCl = classifiers;
           classifiers[0] = "universal"
           for(var k = 0; k < classifiers.length; k++){
             shown += '   <a href="/maven-repo/' + strModLoc + '/' strVersion + '/' + strArc + '-' + strVersion + classifiers[k] + '.jar">' 
-              + shownCl + '</a>>'
+              + shownCl[k] + '</a>>'
           }
           document.writeLine();
         }
