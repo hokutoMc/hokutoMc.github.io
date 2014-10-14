@@ -1,7 +1,7 @@
 var xmlHttpRequest = new XMLHttpRequest();
 var data;
 var classifiers = ["", "-dev"];
-var mods = ["commons"]
+var mods = ["commons"];
 
 xmlHttpRequest.onreadystatechange = function()
 {
