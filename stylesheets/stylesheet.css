@@ -158,6 +158,14 @@ aside a.button {
   margin-bottom: 20px;
   font-size: 21px;
 }
+aside a.button#dl {
+  width: 138px;
+  padding-left: 64px;
+  display: block;
+  background: #2e7bcf url(../images/download-button.png) 0 0 no-repeat;
+  margin-bottom: 20px;
+  font-size: 21px;
+}
 
 code, pre {
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
