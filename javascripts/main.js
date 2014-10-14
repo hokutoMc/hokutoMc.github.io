@@ -41,7 +41,7 @@ function version(){
       
       for(var j = 0; j < verList.length; j++){
         
-        if(vs === verList[j].mcversion{
+        if(vs === verList[j].mcversion){
           var strVersion = verList[j].version;
           var shown = strVersion;
           
