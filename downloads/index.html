@@ -53,9 +53,9 @@
               var shown = strVersion;
               
               var shownCl = classifiers;
-              classifiers[0] = "universal"
+              classifiers[0] = "universal";
               for(var k = 0; k < classifiers.length; k++){
-                shown += '   <a href=\"/maven-repo/' + strModLoc + '/' strVersion + '/' + strModArc + '-' + strVersion + classifiers[k] + '.jar\">' + shownCl[k] + '</a>>';
+                shown += '   <a href=\"/maven-repo/' + strModLoc + '/' + strVersion + '/' + strModArc + '-' + strVersion + classifiers[k] + '.jar\">' + shownCl[k] + '</a>>';
               }
               document.writeLine();
             }
