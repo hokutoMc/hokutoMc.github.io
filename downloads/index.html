@@ -55,7 +55,7 @@
               var shownCl = classifiers;
               classifiers[0] = "universal"
               for(var k = 0; k < classifiers.length; k++){
-                shown += '   <a href="/maven-repo/' + strModLoc + '/' strVersion + '/' + strArc + '-' + strVersion + classifiers[k] + '.jar">' 
+                shown = shown + '   <a href="/maven-repo/' + strModLoc + '/' strVersion + '/' + strArc + '-' + strVersion + classifiers[k] + '.jar">' 
                   + shownCl[k] + '</a>>'
               }
               document.writeLine();
