@@ -20,7 +20,7 @@ xmlHttpRequest.onreadystatechange = function()
     }
 }
 
-var requestUrl = '/jsons/versions.json';
+var requestUrl = 'http://hokutomc.github.io/jsons/versions.json';
 
 
 function version(){
