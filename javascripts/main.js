@@ -24,25 +24,25 @@ var requestUrl = 'http://hokutomc.github.io/jsons/versions.json';
 
 
 function version(){
-  obj = document.test.linkselect;
+  var obj = document.test.linkselect;
 
   index = obj.selectedIndex;
   if (index != 0){
     vs = obj.options[index].value;
     
-    for(var i = 0; i < mods.length; i++){
+    for(var i = 0; i < data.marker.length; i++){
       
-      var strModName = data[mods[i]]["name"];
-      vat strModArc = data[mods[i]]["archive"]
-      var strModLoc = data[mods[i]]["location"];
+      var strModName = data.marker[i].name;
+      vat strModArc = data.marker[i].archive;
+      var strModLoc = data.marker[i].location;
       document.writeLine(strModName);
       
-      var verlist = data[mods[i]]["versions"]
+      var verlist = data.marker[i].versions;
       
       for(var j = 0; j < verList.length; j++){
         
-        if(vs == verList[j]["mcversion"]){
-          var strVersion = verList[j]["version"];
+        if(vs === verList[j].mcversion{
+          var strVersion = verList[j].version;
           var shown = strVersion;
           
           var shownCl = classifiers;
