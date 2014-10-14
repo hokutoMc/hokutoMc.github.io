@@ -9,7 +9,7 @@
     var classifiers = ["", "-dev"];
     var mods = ["commons"];
     
-    requent.open("get", "./jsons/versions.json", true);
+    requent.open("get", "http://hokutomc.github.io/jsons/versions.json", true);
     request.onLoad = function() {
       var data = JSON.perse(this.responceText);
     }
