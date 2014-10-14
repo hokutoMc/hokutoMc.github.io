@@ -1,17 +1,15 @@
 {
-  "mods":[
-    {
-      "name": "hokuto Commons"
-      "archive": "com/hokuto/commons"
-      "location": "commons"
-      "versions":[
-        {
-          "mcVersion": "1.7.10"
-          "version": "0.0.1-1"
-        }
-        ]
-      ,
-      
-    }
-    ]
+  "commons":{
+    "name": "hokuto Commons"
+    "archive": "com/hokuto/commons"
+    "location": "commons"
+    "versions":[
+      {
+        "mcVersion": "1.7.10"
+        "version": "0.0.1-1"
+      }
+      ]
+  }
+  
+  
 }
