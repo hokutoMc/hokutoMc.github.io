@@ -1,6 +1,6 @@
 {
   "mods":[
-    "commons":{
+    {
       "name": "hokuto Commons",
       "archive": "com/hokuto/commons",
       "location": "commons",
